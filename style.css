@@ -1,0 +1,17 @@
+:root {
+    --display-dimension: 960px;
+    --square-border-width: 1px;
+}
+
+ul.display {
+    list-style-type: none; /* not working */
+    padding-inline-start: 0;
+    display: flex;
+}
+
+.square {
+    width: calc(60px - var(--square-border-width));
+    height: calc(60px - var(--square-border-width));
+    border: solid black;
+    border-width: var(--square-border-width);
+}
