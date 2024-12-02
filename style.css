@@ -4,14 +4,20 @@
 }
 
 ul.display {
-    list-style-type: none; /* not working */
+    list-style-type: none;
     padding-inline-start: 0;
+    max-width: 960px;
+    max-height: 960px;
     display: flex;
 }
 
 .square {
-    width: calc(60px - var(--square-border-width));
-    height: calc(60px - var(--square-border-width));
+    width: 60px;
+    height: 60px;
     border: solid black;
     border-width: var(--square-border-width);
+}
+
+.on {
+    background-color: blue;
 }
