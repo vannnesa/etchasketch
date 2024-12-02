@@ -39,5 +39,14 @@ function redrawDisplay(event) {
 
 function squareOn(event) {
     target = event.target;
-    target.className = "square on";
+    r = Math.floor(Math.random() * 256);
+    g = Math.floor(Math.random() * 256);
+    b = Math.floor(Math.random() * 256);
+    target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    if (!(target.style.opacity)) {
+        target.style.opacity = "0.1"
+    }
+    if (parseFloat(target.style.opacity) < 1) {
+        target.style.opacity = String(parseFloat(target.style.opacity) + 0.1);
+    }
 }

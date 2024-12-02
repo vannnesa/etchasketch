@@ -16,6 +16,6 @@ ul.display {
     display: flex;
 }
 
-.on {
-    background-color: blue;
+.square {
+    opacity: 0;
 }
