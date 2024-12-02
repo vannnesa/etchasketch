@@ -1,21 +1,25 @@
 :root {
     --display-dimension: 960px;
-    --square-border-width: 1px;
 }
 
 ul.display {
+    background-color: aliceblue;
     list-style-type: none;
     padding-inline-start: 0;
     max-width: 960px;
     max-height: 960px;
     display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    max-height: 60px;
 }
 
 .square {
     width: 60px;
     height: 60px;
-    border: solid black;
-    border-width: var(--square-border-width);
 }
 
 .on {
