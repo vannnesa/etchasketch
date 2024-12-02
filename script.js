@@ -3,8 +3,7 @@ let display;
 
 function initialize(event) {
     display = document.querySelector("ul.display");
-    display.addEventListener("mouseover", toggleSquare);
-    display.addEventListener("mouseout", toggleSquare);
+    display.addEventListener("mouseover", squareOn);
     initializeDisplay(16, 16);
 }
 
@@ -21,12 +20,7 @@ function initializeDisplay(width, height) {
     }
 }
 
-function toggleSquare(event) {
+function squareOn(event) {
     target = event.target;
-    if (target.className === "square") {
-        target.className += " on";
-    }
-    else {
-        target.className = "square";
-    }
+    target.className = "square on";
 }
